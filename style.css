@@ -41,3 +41,56 @@ form button:hover {
   background: #911a1a;
   color: #fff;
 }
+
+.todo-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  display: flex;
+  margin: 5px;
+  background-color: #ffde5f;
+}
+
+.todo-item {
+  font-size: 1.5rem;
+  margin: auto;
+  padding: 10px;
+}
+
+.delete-btn {
+  border: none;
+  background-color: #911a1a;
+  color: #ffde5f;
+  font-size: 1rem;
+  margin: auto;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.complete-btn {
+  border: none;
+  background-color: #911a1a;
+  color: #ffde5f;
+  font-size: 1rem;
+  margin: auto;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #911a1a;
+  background-color: #ffde5f;
+}
+
+.complete-btn:hover {
+  color: #911a1a;
+  background-color: #ffde5f;
+}
