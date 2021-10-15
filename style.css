@@ -57,6 +57,7 @@ form button:hover {
   display: flex;
   margin: 5px;
   background-color: #ffde5f;
+  transition: all 0.3s ease;
 }
 
 .todo-item {
@@ -65,32 +66,36 @@ form button:hover {
   padding: 10px;
 }
 
-.delete-btn {
+.delete-btn, .complete-btn {
   border: none;
-  background-color: #911a1a;
   color: #ffde5f;
   font-size: 1rem;
-  margin: auto;
   padding: 1rem;
   cursor: pointer;
 }
 
 .complete-btn {
-  border: none;
+  background-color: #09c909;
+}
+
+.delete-btn {
   background-color: #911a1a;
-  color: #ffde5f;
-  font-size: 1rem;
-  margin: auto;
-  padding: 1rem;
-  cursor: pointer;
 }
 
-.delete-btn:hover {
+.delete-btn:hover, .complete-btn:hover {
   color: #911a1a;
   background-color: #ffde5f;
 }
 
-.complete-btn:hover {
-  color: #911a1a;
-  background-color: #ffde5f;
+.fa-trash, .fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.fall {
+  transform: translate(2rem, 5rem) rotateZ(35deg);
+  opacity: 0;
 }
