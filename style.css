@@ -101,15 +101,22 @@ form button:hover {
 }
 
 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
+  outline: none;
   border: none;
   padding: 0 1em 0 0;
-  margin: 0;
   width: 100%;
   font-family: inherit;
   font-size: inherit;
   cursor: inherit;
   line-height: inherit;
+  background: #fff;
+  color: #911a1a;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
 }
 
 .select {
@@ -118,19 +125,27 @@ select {
   overflow: hidden;
 }
 
-select {
-  color: #911a1a;
-  width: 10rem;
-  cursor: pointer;
-  padding: 1rem;
-}
-
 .select::after {
   content: "\25BC";
   position: absolute;
-  background: #ffde5f;
+  background: #911a1a;
+  color: #ffde5f;
   top: 0;
   right: 0;
   padding: 1rem;
   pointer-events: none;
+}
+
+.select option {
+  background: #fff;
+}
+
+/* .select:hover, .select:focus {
+  outline: none;
+  border: 1px solid #000;
+} */
+
+.select:hover::after {
+  background: #ffde5f;
+  color: #911a1a;
 }
